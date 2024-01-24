@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React from "react";
 import { Container } from "./Home.styles"
 import CategoryCard from "../../components/CategoryCard/CategoryCard";
@@ -17,6 +16,7 @@ const categories = [
 ];
 
 const Home = () => {
+
   return (
     <Container>
       {categories.map((category) => (

@@ -10,7 +10,7 @@ interface CategoryCardProps {
 const CategoryCard = ({ title, link, image }: CategoryCardProps) => {
   return (
     <Wrapper>
-      <StyledLink to={link} imageUrl={image}>
+      <StyledLink to={link} image={image}>
         <TitleWrapper><h2>{title}</h2></TitleWrapper>
       </StyledLink>
     </Wrapper>
