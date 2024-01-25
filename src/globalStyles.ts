@@ -7,6 +7,7 @@ const GlobalStyles = css`
   body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #242424;
   }
 `;
 

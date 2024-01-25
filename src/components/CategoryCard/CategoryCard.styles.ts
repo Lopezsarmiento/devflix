@@ -14,7 +14,7 @@ export const StyledLink = styled(Link)<StyledLinkProps>`
   align-items: center;
   justify-content: center;
   width: 250px;
-  height: 250px;
+  height: 150px;
   background-image: url(${(props) => props.image});
   background-size: cover;
   background-position: center;
@@ -25,27 +25,24 @@ export const StyledLink = styled(Link)<StyledLinkProps>`
   box-shadow: 10px 10px 18px -1px rgba(0,0,0,0.66);
 
   &:hover {
-    width: 275px;
-    height: 275px;
-  } 
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.6;
+    border: 1px solid white;
+  }
 
-
+  /* media query for resolutions above 600px */
   @media (min-width: 600px) {
-    &:hover {
-      width: 275px;
-      height: 275px;
-    } 
+    width: 250px;
+    height: 250px;
   }
 
   /* media query for resolutions above 700px */
   @media (min-width: 700px) {
     flex-direction: row;
     width: 300px;
-    height: 600px;
-    &:hover {
-      width: 330px;
-      height: 660px;
-    } 
+    height: 500px;
   }
 `;
 
