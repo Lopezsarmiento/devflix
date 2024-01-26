@@ -8,7 +8,6 @@ interface CardContainerProps {
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
-  width: 250px;
   height: 100px;
   position: relative;
   margin: 10px;
@@ -30,13 +29,12 @@ export const CardContainer = styled.div<CardContainerProps>`
   }
 
   @media (min-width: 600px) {
-    width: 200px;
+
     height: 200px;
-    flex-basis: 40%;
   }
 
   @media (min-width: 700px) {
-    flex-basis: 20%;
+    
   }
 `;
 

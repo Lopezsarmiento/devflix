@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from './List.styles';
+import { Container, GridContainer } from './List.styles';
 import Card from '../../Card/Card';
 import { Item } from './List.types';
 import Modal from '../Modal/Modal';
@@ -18,7 +18,7 @@ const List = ({ items }: { items: Item[] }) => {
   }
 
   return (
-    <Container>
+    <GridContainer>
       {items.map((item: Item) => {
         return <Card data={item} key={item.id} handleClick={handleClickedItem}/>;
       })}
@@ -27,7 +27,7 @@ const List = ({ items }: { items: Item[] }) => {
           <CardDetail item={selectedItem} />
         </Modal>
       )}
-    </Container>
+    </GridContainer>
   );
 }
 

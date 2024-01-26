@@ -1,11 +1,11 @@
 import React from 'react';
 import { Brand, Nav, NavItem, NavList, NavLink } from './Navbar.styles';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <Nav>
       <Brand>
-        DevFlix
+        DEVFLIX
       </Brand>
       <NavList>
         <NavItem>

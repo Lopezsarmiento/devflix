@@ -12,7 +12,7 @@ const Series = () => {
 
   // Memoize the sorting logic
   const orderedSeries = useMemo(() => {
-    // filter items by type: movies and releasedYear >= 2010
+    // filter items by type: series and releasedYear >= 2010
     const filteredSeries = data.filter(
       (item: Serie) =>
         item.type === "series" && Number(item.releasedYear) >= 2010
